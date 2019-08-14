@@ -1,0 +1,111 @@
+/* Main */
+* {
+	font-family: sans-serif;
+	font-variant: small-caps;
+	color: WhiteSmoke;
+}
+
+	body {
+		margin: 0px;
+
+		background: linear-gradient(to top right, #000000 0%, #101010 100%);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+
+/* Navbar */
+nav {
+	padding: 10px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+	label {
+		min-height: 46px;
+		font-family: 'Sedgwick Ave Display', cursive;
+		font-size: 56px;
+		display: block;
+		cursor: pointer;
+		background: url("nav_menu.png") no-repeat left center;
+		padding: 10px 0 10px 50px;
+
+		display: none;
+
+		transition: background-image 0.1s ease-in;
+	}
+
+	input { display: none; }
+	input:checked + label {
+		background-image: url("nav_menu_close.png");
+		transition: background-image 0.1s ease-in;
+	}
+
+	/* Nav Divs */
+	nav ul {
+		list-style: none;
+		display: flex;
+		align-items: center;
+	}
+
+	/* Nav Links */
+	nav a {
+		text-decoration: none;
+		padding: 8px;
+	}
+
+		nav a.active, nav a:hover {text-shadow: 0px 0px 5px White; }
+		nav a:active { color: LightGray; }
+
+		nav a.alternate {
+			color: Black;
+			background: whitesmoke;
+
+			border-radius: 15px;
+		}
+
+		nav a.alternate:hover {
+			box-shadow: 0px 0px 5px White;
+		}
+
+
+
+
+
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (max-width: 1024px) {
+	/* Navbar */
+	nav {
+		padding: 0px;
+		margin: 0px;
+
+		max-height: 0px;
+		opacity: 0.0;
+
+		overflow: hidden;
+		flex-direction: column;
+	}
+
+		/* Toggle Effect */
+		label {
+			display: initial;
+		}
+
+		input:checked ~ nav {
+			max-height: 100%;
+			opacity: 1.0;
+
+			transition: opacity 0.25s ease-in;
+		}
+
+		
+
+		nav ul { display: initial; }
+		nav a {
+			padding-left: 5px;
+			display: block;
+		}
+}
