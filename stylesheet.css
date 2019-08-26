@@ -28,6 +28,19 @@
 	.row {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	div.row {
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	div.column {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 
@@ -37,7 +50,7 @@ nav {
 
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 	label {
@@ -152,6 +165,11 @@ table {
 @media only screen and (max-width: 1024px) {
 	.hide-on-mobile {
 		display: none;
+	}
+
+	div.row {
+		flex-direction: column;
+		align-items: center;
 	}
 
 	/* Navbar */

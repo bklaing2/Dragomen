@@ -6,9 +6,9 @@
 	<head>
 		<title>Music</title>
 
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+			<link rel="icon" href="favicon.ico" type="image/x-icon">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="stylesheet.css" type="text/css">
 
 		<meta charset="UTF-8">
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -23,50 +23,62 @@
 	<!-- Body -->
 	<body>
 
-        <!-- Header -->
-        <div class='container-header'>
-            <input type="checkbox" id="menu">
-            <label for="menu"></label>
+		<!-- Header -->
+		<div class='container-header'>
+			<input type="checkbox" id="menu">
+			<label for="menu"></label>
 
-            <nav>
-                <ul>
-                    <li class='hide-on-mobile'><a href="index.html"><img src="nav_img.png" alt="Dragomen" height="42" width="42" /></a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#" class="active">Music</a></li>
-                    <li><a href="shows.html">Shows</a></li>
-                    <li><a href="store.html">Store</a></li>
-                </ul>
+			<nav>
+				<ul>
+					<li class='hide-on-mobile'><a href="index.html"><img src="nav_img.png" alt="Dragomen" height="42" width="42" /></a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#" class="active">Music</a></li>
+					<li><a href="shows.html">Shows</a></li>
+					<li><a href="store.html">Store</a></li>
+				</ul>
 
-                <ul class='row'>
-                    <li><a href="https://www.facebook.com/thebanddragomen/" target="_blank" class="fa fa-facebook"></a></li>
-                    <li><a href="https://www.instagram.com/thedragomen/" target="_blank" class="fa fa-instagram"></a></li>
-                    <li><a href="https://twitter.com/TheDragomen" target="_blank" class="fa fa-twitter"></a></li>
-                    <li><a href="https://itunes.apple.com/us/artist/dragomen/1454530754" target="_blank" class="fa fa-itunes-note"></a></li>
-                    <li><a href="https://open.spotify.com/artist/18yPUl6DRIG9ZAf7VwKesg" target="_blank" class="fa fa-spotify"></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCErRt_S62reDqmZrya_sl9Q" target="_blank" class="fa fa-youtube"></a></li>
-                </ul>
-            </nav>
-        </div>
+				<ul class='row'>
+					<li><a href="https://www.facebook.com/thebanddragomen/" target="_blank" class="fa fa-facebook"></a></li>
+					<li><a href="https://www.instagram.com/thedragomen/" target="_blank" class="fa fa-instagram"></a></li>
+					<li><a href="https://twitter.com/TheDragomen" target="_blank" class="fa fa-twitter"></a></li>
+					<li><a href="https://itunes.apple.com/us/artist/dragomen/1454530754" target="_blank" class="fa fa-itunes-note"></a></li>
+					<li><a href="https://open.spotify.com/artist/18yPUl6DRIG9ZAf7VwKesg" target="_blank" class="fa fa-spotify"></a></li>
+					<li><a href="https://www.youtube.com/channel/UCErRt_S62reDqmZrya_sl9Q" target="_blank" class="fa fa-youtube"></a></li>
+				</ul>
+			</nav>
+		</div>
 
-        <br>
-
-
-        <!-- Content -->
-        <div class='container'>
-            <h1>Music!</h1>
-            
-            <!-- Spotify -->
-            <iframe src="https://open.spotify.com/embed/artist/18yPUl6DRIG9ZAf7VwKesg" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<br>
 
 
-            <!-- YouTube -->
-            <!-- Tumaini -->
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/y8O3k-zi2fs">Tumaini</iframe>
+		<!-- Content -->
+		<div class='container'>
+			<h1>Music!</h1>
+			
+			<div class='row'>
 
-            <!-- Staring at the Sun -->
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/goYDKb1Ctkg">Staring at the Sun</iframe>
-        </div>
+				<!-- Spotify -->
+				<div class='column'>
+					<h2>Spotify</h2>
+					<iframe src="https://open.spotify.com/embed/artist/18yPUl6DRIG9ZAf7VwKesg" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				</div>
 
-        <!-- Footer -->
+
+				<!-- YouTube -->
+				<div class='column'>
+						<h2>YouTube</h2>
+
+						<div class='row'>
+							<!-- Tumaini -->
+							<iframe width="420" height="315" frameborder="0" src="https://www.youtube.com/embed/y8O3k-zi2fs">Tumaini</iframe>
+
+							<!-- Staring at the Sun -->
+							<iframe width="420" height="315" frameborder="0" src="https://www.youtube.com/embed/goYDKb1Ctkg">Staring at the Sun</iframe>
+						</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
 	</body>
 </html>
